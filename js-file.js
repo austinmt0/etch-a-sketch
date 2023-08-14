@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const cell = document.createElement("div"); 
                 cell.classList.add("grid-cell"); 
                 gridContainer.appendChild(cell); 
+
+                cell.addEventListener("mouseenter", function () {
+                    cell.classList.add("hovered"); 
+                }); 
             }; 
         }); 
     }); 

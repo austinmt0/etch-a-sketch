@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
+    margin-top: 100px;
 }
 
 .grid-cell {
@@ -19,3 +20,6 @@
     height: calc(100% / var(--grid-size));
 }
 
+.hovered {
+    background-color: black;
+}
