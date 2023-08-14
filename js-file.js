@@ -2,11 +2,19 @@
 document.addEventListener("DOMContentLoaded", function() { 
     const gridButtons = document.querySelectorAll(".grid-button"); 
     const gridContainer = document.querySelector(".grid-container");
-    
-    for (let i = 0; i < 16 * 16; i++) {
+
+    function createGridCell() {
         const cell = document.createElement("div"); 
         cell.classList.add("grid-cell"); 
         gridContainer.appendChild(cell); 
+
+        cell.addEventListener("mouseenter", function () {
+            cell.classList.add("hovered"); 
+        }); 
+    }
+
+    for (let i = 0; i < 16 * 16; i++) {
+        createGridCell (); 
     }
 
     gridButtons.forEach(function (button) {
