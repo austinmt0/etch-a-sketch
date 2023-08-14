@@ -25,7 +25,3 @@ body {
     width: calc(100% / var(--grid-size));
     height: calc(100% / var(--grid-size));
 }
-
-.hovered {
-    background-color: black;
-}
